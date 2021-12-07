@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    font-family:"Poppins", sans-serif;
+}
+body{
+    background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*::-webkit-scrollbar {
+    width:0.3em;  
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #00000088;
+    outline: 1px solid rgb(0, 0, 0);
+    height:10px;
+    width:10px;
+    border-radius:100px;
+}
+
+.mac-UI{
+    height:40rem;
+    width:70rem;
+    position:relative;
+    top:20px;
+    left:140px;
+    border-radius:30px;
+    background:rgba(66, 81, 85, 0.589);
+}
+
+.top-nav{
+    border-top-left-radius:20px;
+    height:60px;
+}
+
+.top-left-nav{
+    border-bottom:1px solid rgba(255, 255, 255, 0.158);
+    width:200px;
+    height:60px;
+    border-top-left-radius:20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.circle{
+    height:17px;
+    width:17px;
+    border-radius:100%;
+    cursor:pointer;
+}
+#red-cir{
+    background:rgb(255, 88, 88);
+    position:relative;
+    top:20px;
+    left:30px;
+}
+#yellow-cir{
+    background:rgb(230, 203, 49);
+    position:relative;
+    top:20px;
+    right:10px;
+}
+#green-cir{
+    background:rgb(30, 226, 30);
+    position:relative;
+    top:20px;
+    right:50px;
+}
+
+
+.top-right-nav{
+    width:919px;
+    position:relative;
+    bottom:61px;
+    left:201px;
+    height:60px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.158);
+    border-top-right-radius:20px;
+    display:grid;
+}
+
+.trn-list{
+    height:60px;
+    width:500px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+.trn-list-item{
+    height:60px;
+    width:125px;
+    text-align:center;
+}
+.trn-list-item:hover{
+    color:white;
+    border-bottom:2px solid white;
+    cursor:pointer;
+}
+.trn-list-item label{
+     color:rgb(192, 190, 190);
+     font-size:16px;
+     position:relative;
+     top:17px;
+     font-weight:600;
+}
+.trn-list-item label:hover{
+    color:white;
+    cursor:pointer;
+}
+.textbox{
+    background:rgba(31, 31, 31, 0.993);
+    height:40px;
+    width:150px;
+    position:relative;
+    left:520px;
+    bottom:50px;
+    cursor:text;
+}
+.textbox i{
+     background:rgba(31, 31, 31, 0.993);
+    font-size:15px;
+    position:relative;
+    top:8px;
+    left:20px;
+    color:rgba(255, 255, 255, 0.288);
+}
+.textbox input{
+    background:rgba(31, 31, 31, 0.993);
+    height:39px;
+    position:absolute;
+    left:41px;
+    border:0px;
+    width:100px;
+    font-size:15px;
+}
+
+.prof-icons{
+    position:absolute;
+    left:700px;
+    height:60px;
+    width:200px;
+}
+.prof-icons i{
+    font-size:30px;
+    color:white;
+    background:rgba(66, 81, 85, 0);
+}
+#notifi{
+    position:relative;
+    bottom:5px;
+    left:10px;
+}
+#cloud{
+    position:relative;
+    bottom:5px;
+    left:30px;
+}
+#my_img{
+    height:45px;
+    width:45px;
+    position:relative;
+    left:50px;
+    top:5px;
+    border-radius:100%;
+    border:2px solid white;
+}
+
+
+
+
+/* BOTTOM DIV */
+.bottom-div{
+    height:570px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.bottom-left-div{
+    width:250px;
+    height:570px;
+    border-bottom-left-radius:20px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.categories{
+    color:rgba(255, 255, 255, 0.856);
+    position:relative;
+    left:30px;
+    display:grid;
+    gap:0.8rem;
+}
+.cat_heading{
+    color:rgba(255, 255, 255, 0.425);
+}
+#APPS_CAT{
+    position:relative;
+    top:30px;
+}
+.category{
+    position:relative;
+    left:20px;
+    width:190px;
+    font-size:17px;
+    height:40px;
+    cursor:pointer;
+    border-radius:10px;
+}
+.category labeL{
+    position:relative;
+    top:5px;
+    left:20px;
+    cursor:pointer;
+}
+.category i{
+    position:relative;
+    left:10px;
+    top:5px;
+    cursor:pointer;
+}
+.category:hover{
+    background:rgba(7, 7, 7, 0.39);
+    transition:ease-in 0.2s;
+    color:rgb(255, 250, 250);
+}
+
+#CATEGORY_CAT{
+    position:relative;
+    top:60px;
+}
+#FONTS_CAT{
+    position:relative;
+    top:90px;
+}
+
+.bottom-right-div{
+    width:866px;
+    position:relative;
+    left:250px;
+    bottom:568px;
+    height:575px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    background:rgba(58, 58, 58, 0.555);
+    border-bottom-right-radius:20px;
+}
+
+.poster{
+    position:relative;
+    top:30px;
+    left:70px;
+    border-radius:20px;
+}
+.poster img{
+    border-radius:20px;
+}
+
+.blue-btn{
+    background:rgba(0, 112, 216, 0.877);
+    color:white;
+    border-radius:20px;
+    height:35px;
+    width:142px;
+    border:0px;
+    cursor:pointer;
+}
+.blue-btn:hover{
+    background:rgb(0, 62, 119);
+}
+#poster-btn{
+    position:relative;
+    right:696px;
+    bottom:26px;
+}
+
+
+
+.apps-list{
+    position:relative;
+    top:50px;
+    width:700px;
+    position:relative;
+    left:80px;
+}
+
+.apps-long-div{
+    width:100%;
+    background:rgba(110, 109, 109, 0.479);
+    cursor:pointer;
+}
+.apps-long-div:hover{
+    transition:ease-out 0.5s;
+    background:rgba(0, 0, 0, 0.493);
+}
+.apps-long-div img{
+    position:relative;
+    top:5px;
+    left:20px;
+}
+.app-name{
+    color:white;
+    font-size:22px;
+    position:relative;
+    left:20px;
+    bottom:10px;
+}
+.app-name-2{
+    color:white;
+    font-size:22px;
+    position:relative;
+    left:5px;
+    bottom:10px;
+}
+#photoshop-app{
+    position:absolute;
+    top:40px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+#illustrator-app{
+    position:absolute;
+    top:100px;
+}
+#afteff-app{
+    position:absolute;
+    top:160px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+#app-update{
+    position:absolute;
+    right:70px;
+    top:10px;
+}
+.transp-btn{
+    position:absolute;
+    right:80px;
+    top:10px;
+    height:35px;
+    width:100px;
+    background:rgba(92, 92, 92, 0);
+    border:1px solid rgba(255, 248, 248, 0.747);
+    border-radius:20px;
+    color:rgba(255, 255, 255, 0.815);
+    cursor:pointer;
+}
+
+.dropdown {
+    position: absolute;
+    height: 53px;
+    width: 80px;
+    right:-40px;
+    bottom:-15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    color:white;
+}
+ul{
+    display:grid;
+    grid-template-columns:repeat(3,2fr);
+}
+
+
+.apps-plan-div{
+    position:relative;
+    top:280px;
+    width:700px;
+    left:80px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1rem;
+}
+
+.apps-square-div{
+    height:270px;
+    width:220px;
+    position:relative;
+    top:40px;
+    background:rgba(110, 109, 109, 0.479);
+    cursor:pointer;
+    border-radius:20px;
+}
+.apps-square-div:hover{
+    transition:ease-out 0.5s;
+    background:rgba(0, 0, 0, 0.493);
+    transform:scale(1.01);
+}
+.apps-square-div img{
+    position:relative;
+    top:7px;
+    left:10px;
+}
+.app-desc{
+    font-size:15px;
+    color:white;
+    position:relative;
+    left:5px;
+}
+#sq-app-btn{
+    position:relative;
+    width:90px;
+    left:80px;
+    top:20px;
+}
+#sq-app-drop{
+    position:relative;
+    left:200px;
+    bottom:8px;
+}
+
+#prem-pro-app{
+    position:absolute;
+    bottom:200px;
+}
